@@ -276,15 +276,15 @@
         </button>
         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
             
-                <a class="index_share-link" href="[object Object]" title="友情链接">
-                    <l class="mdl-menu__item mdl-js-ripple-effect"i>
-                        友情链接
-                    </li>
-                </a>
-            
                 <a class="index_share-link" href="[object Object]" title="About">
                     <l class="mdl-menu__item mdl-js-ripple-effect"i>
                         About
+                    </li>
+                </a>
+            
+                <a class="index_share-link" href="[object Object]" title="友情链接">
+                    <l class="mdl-menu__item mdl-js-ripple-effect"i>
+                        友情链接
                     </li>
                 </a>
             
@@ -296,6 +296,15 @@
             <span class="visuallyhidden">show menu</span>
         </button>
         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
+            
+            <!-- All Site UV -->
+            <a class="index_share-link" href="#">
+                <li class="mdl-menu__item mdl-js-ripple-effect">
+                    <span id="busuanzi_container_site_uv">
+                        <span id="busuanzi_value_site_uv"></span>&nbsp;瀏覽量
+                    </span>
+                </li>
+            </a>
             
 
             
@@ -391,6 +400,12 @@
             </span>
             
             
+                <!-- Comment Number -->
+                &nbsp;|&nbsp;
+                <span class="post_entry-comment" >
+                        <span class="ds-thread-count" data-thread-key="undefined" data-count-type="comments"></span>
+                </span>
+            
             
             <!-- Post Views -->
             <span class="post_entry-views">
@@ -448,6 +463,12 @@
                 
             </span>
             
+            
+                <!-- Comment Number -->
+                &nbsp;|&nbsp;
+                <span class="post_entry-comment" >
+                        <span class="ds-thread-count" data-thread-key="undefined" data-count-type="comments"></span>
+                </span>
             
             
             <!-- Post Views -->
@@ -507,6 +528,12 @@
             </span>
             
             
+                <!-- Comment Number -->
+                &nbsp;|&nbsp;
+                <span class="post_entry-comment" >
+                        <span class="ds-thread-count" data-thread-key="undefined" data-count-type="comments"></span>
+                </span>
+            
             
             <!-- Post Views -->
             <span class="post_entry-views">
@@ -565,6 +592,12 @@
                 
             </span>
             
+            
+                <!-- Comment Number -->
+                &nbsp;|&nbsp;
+                <span class="post_entry-comment" >
+                        <span class="ds-thread-count" data-thread-key="undefined" data-count-type="comments"></span>
+                </span>
             
             
             <!-- Post Views -->
@@ -639,7 +672,7 @@
         <ul id="settings-dropdown" class="dropdown-menu">
 			
                 <li>
-                    <a href="bobrucejunlink@gmail" target="_blank" title="Email Me">
+                    <a href="mailto:bobrucejunlink@gmail.com" target="_blank" title="Email Me">
 						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         Email Me
                     </a>
@@ -682,6 +715,18 @@
 
     <!-- Categories  -->
     
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+             分類
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            
+        </ul>
+    </li>
+    
 
     <!-- Divider -->
     <li class="divider"></li>
@@ -690,14 +735,14 @@
     <!-- Pages  -->
 	
 		<li>
-			<a href="[object Object]" title="友情链接">
-				友情链接
+			<a href="[object Object]" title="About">
+				About
 			</a>
 		</li>
 	
 		<li>
-			<a href="[object Object]" title="About">
-				About
+			<a href="[object Object]" title="友情链接">
+				友情链接
 			</a>
 		</li>
 	
@@ -894,7 +939,24 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+
+    <!-- 多说公共 js 代码 start -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"Juu"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'https://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共 js 代码 end -->
 
 
 

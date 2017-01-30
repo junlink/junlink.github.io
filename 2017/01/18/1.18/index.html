@@ -290,6 +290,15 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其他設備中閱讀本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZ0lEQVR42u3aS27DMAwFwNz/0u0BiriPFCU7wXgVIP5ovJDoJ75+vvp44eHh4eHh4eHhPYz3io+/V13f593519cOjA0PDw/vCO+fqXZoQO/ufP1veWx4eHh4B3nvBpT/Tv6tXpWPDQ8PD+/JvLxETib96nPx8PDwPp1XZVdDCjw8PLwn85IP/utb5+Bq+X4oa8HDw8OLefkm0/nfR/f38PDw8AJeuaUpmKx7JfWWpis8PDy8Dbx8Ik5K5+RuUwsDHh4e3r28JB7N49fe0lINi5tfDHh4eHhDvOvg9fphszFub6sMDw8P717e+mN6LVlJk9ZAZwQeHh7eBl61oaoa7PZeUP468PDw8Hbzyp/6QZxaPae6PdZsHcDDw8PbxlsJDnqklaarQmcEHh4e3hCvujHfix7yJ+Yvsdk6gIeHh7fMW4kPCpN1fM7AVhkeHh7eQV51Wq8GwXl02yvB8fDw8E7yepv9vaI5XwbGSmo8PDy8bWHEwKQcD7r3EpdiXDw8PLxRXrKhtRLXrsS41YgZDw8P7wwv2Z5/tY7rV9BrQSjEuHh4eHjbeAmgGvuuhxF58xYeHh7eXby8IO4FCivtAtdn4uHh4d3Fy4ebFMcrLVl5gY6Hh4d3nlc9kgm6yogK5bxYx8PDw9vMm52Uq+V43l4w0HSFh4eHN8qrLgZT+F5kXF4Y8PDw8LbxqrHpehtW3pKVl+B4eHh4n8Wrtg70mr3Gmq7w8PDwjvOqbVK9kDePIfDw8PDO85IwIm8XqBbN6y0IeHh4eCd5KxFAb4j5spEX03h4eHhneN934OHh4eHh4eHhPeD4BdYczkrg5U7YAAAAAElFTkSuQmCC">
+            </ul>
+    
 
 
     <!-- Tags (bookmark) -->
@@ -313,6 +322,17 @@
 
     
 
+    
+      
+      <!-- Busuanzi Views -->
+      <a class="post_share-link" href="#">
+        <li class="mdl-menu__item">
+            <span id="busuanzi_container_page_pv">
+                <span id="busuanzi_value_page_pv"></span>&nbsp;瀏覽量
+            </span>
+        </li>
+      </a>
+      
     
 
     <!-- Share Weibo -->
@@ -390,6 +410,28 @@ int n1 = 14;
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用多说评论 -->
+    <link rel="stylesheet" href="/css/duoshuo.min.css">
+<style>
+    #ds-thread #ds-reset .ds-post-button{
+        background-color: #0097A7 !important;
+    }
+    #ds-wrapper #ds-reset .ds-icons-32{
+        background-color: #0097A7 !important;
+    }
+    #ds-reset .ds-highlight {
+        color: #0097A7 !important;
+    }
+</style>
+<div id="comments">
+    <!-- 多说评论框 start -->
+        <div class="ds-thread" 
+            data-thread-key="undefined" 
+            data-url="http://yoursite.com/2017/01/18/1.18/"
+            data-title=""></div>
+    <!-- 多说评论框 end -->
+</div>
+
 
 
                 
@@ -463,7 +505,7 @@ int n1 = 14;
         <ul id="settings-dropdown" class="dropdown-menu">
 			
                 <li>
-                    <a href="bobrucejunlink@gmail" target="_blank" title="Email Me">
+                    <a href="mailto:bobrucejunlink@gmail.com" target="_blank" title="Email Me">
 						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         Email Me
                     </a>
@@ -506,6 +548,18 @@ int n1 = 14;
 
     <!-- Categories  -->
     
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+             分類
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            
+        </ul>
+    </li>
+    
 
     <!-- Divider -->
     <li class="divider"></li>
@@ -514,14 +568,14 @@ int n1 = 14;
     <!-- Pages  -->
 	
 		<li>
-			<a href="[object Object]" title="友情链接">
-				友情链接
+			<a href="[object Object]" title="About">
+				About
 			</a>
 		</li>
 	
 		<li>
-			<a href="[object Object]" title="About">
-				About
+			<a href="[object Object]" title="友情链接">
+				友情链接
 			</a>
 		</li>
 	
@@ -718,7 +772,24 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+
+    <!-- 多说公共 js 代码 start -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"Juu"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'https://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共 js 代码 end -->
 
 
 

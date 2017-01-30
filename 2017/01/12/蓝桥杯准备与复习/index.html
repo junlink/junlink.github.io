@@ -290,6 +290,15 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其他設備中閱讀本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC1klEQVR42u3aQbbaQAwEQO5/6eQACfxuiZfATHnFAuwps9BTS49fV14PbGxsbGxsbGxs7I9kP+Kr/dWf3yyO+OSJqzNjY2NjH81uD/Ga9PrxM8b+zNjY2Ng3sF8Xobwgvb5D+4KenSE/MzY2NjZ28jlpVJJmY1/8sLGxsbHzApZEP23T0rYZ2NjY2NizxyRtyezFJY3Kf8jSsLGxsT+e3Q5uP+HzP51vY2NjY38wu73y1Zy8YUgKYbv085f7YGNjYx/KzgvDZu2maBjWq5/Y2NjYN7PbqKhd05nF+u2w+ekdsLGxsS9mv6sU5YeetSs/DJWxsbGxD2W3JaqNkPaNSjswiAa92NjY2MexN2uUszFA3qi0xbUoYNjY2NjHsZNlndnwIA+kNqFVPd/GxsbGPoI9G6O2BS8pS/tWBBsbG/tOdjvuzYeys6XJtmQWJ8fGxsa+gL0Jktoh7ix+mq0BYWNjY9/AzstP3gC0iz7t4LaOrrCxsbGPZj/iKw+D8jbjved526AXGxsb+wvZSXOSNxgtbxYw5cUVGxsb+1R2G/RshgptW5KPCqL7Y2NjYx/KrqOZxdpNOxiYre9gY2Nj38Zuw522UM14m4ApGg9gY2NjH8SeFYPZus/s0G2MNazb2NjY2F/LzqP5Wdxfh/gxI3nF2NjY2Pew8+PmQX8OLtqJ+A+opyLY2NjYX85ux6uzYtaWtPz1Rb/CxsbGvoA9G6wmJTB/lZvRRb2phI2NjX0ce7Y6OWNvoqL2idjY2Nhns9urxefNyb7hwcbGxr6T3a7U5EUoL13vbWyGUxFsbGzsL2fPGoM2lpp9fxN+YWNjY9/GflfQvylUbVktii42NjY2djxeLdqDPNwPIqc3TEWwsbGxr2FvYqP9qKBtlrCxsbHvYefD3TbiyZeB9u1KXcCwsbGxj2DnAc1mGDArhLMTYmNjY9/DvufCxsbGxsbGxsbG/pjrN48PpLeWJaf+AAAAAElFTkSuQmCC">
+            </ul>
+    
 
 
     <!-- Tags (bookmark) -->
@@ -313,6 +322,17 @@
 
     
 
+    
+      
+      <!-- Busuanzi Views -->
+      <a class="post_share-link" href="#">
+        <li class="mdl-menu__item">
+            <span id="busuanzi_container_page_pv">
+                <span id="busuanzi_value_page_pv"></span>&nbsp;瀏覽量
+            </span>
+        </li>
+      </a>
+      
     
 
     <!-- Share Weibo -->
@@ -391,6 +411,28 @@ long类型数字后头要以L结尾 例：1234567890L
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用多说评论 -->
+    <link rel="stylesheet" href="/css/duoshuo.min.css">
+<style>
+    #ds-thread #ds-reset .ds-post-button{
+        background-color: #0097A7 !important;
+    }
+    #ds-wrapper #ds-reset .ds-icons-32{
+        background-color: #0097A7 !important;
+    }
+    #ds-reset .ds-highlight {
+        color: #0097A7 !important;
+    }
+</style>
+<div id="comments">
+    <!-- 多说评论框 start -->
+        <div class="ds-thread" 
+            data-thread-key="undefined" 
+            data-url="http://yoursite.com/2017/01/12/蓝桥杯准备与复习/"
+            data-title=""></div>
+    <!-- 多说评论框 end -->
+</div>
+
 
 
                 
@@ -464,7 +506,7 @@ long类型数字后头要以L结尾 例：1234567890L
         <ul id="settings-dropdown" class="dropdown-menu">
 			
                 <li>
-                    <a href="bobrucejunlink@gmail" target="_blank" title="Email Me">
+                    <a href="mailto:bobrucejunlink@gmail.com" target="_blank" title="Email Me">
 						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         Email Me
                     </a>
@@ -507,6 +549,18 @@ long类型数字后头要以L结尾 例：1234567890L
 
     <!-- Categories  -->
     
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+             分類
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            
+        </ul>
+    </li>
+    
 
     <!-- Divider -->
     <li class="divider"></li>
@@ -515,14 +569,14 @@ long类型数字后头要以L结尾 例：1234567890L
     <!-- Pages  -->
 	
 		<li>
-			<a href="[object Object]" title="友情链接">
-				友情链接
+			<a href="[object Object]" title="About">
+				About
 			</a>
 		</li>
 	
 		<li>
-			<a href="[object Object]" title="About">
-				About
+			<a href="[object Object]" title="友情链接">
+				友情链接
 			</a>
 		</li>
 	
@@ -719,7 +773,24 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+
+    <!-- 多说公共 js 代码 start -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"Juu"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'https://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共 js 代码 end -->
 
 
 
